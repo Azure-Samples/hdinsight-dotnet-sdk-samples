@@ -1,57 +1,26 @@
-# Project Name
+# Sample for [HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/) Nuget Packages
 
-(short, 1-3 sentenced, description of the project)
+This repo provides C# samples for the [HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/) Nuget Packages.
+**If you are interetsed in running a specific example, you can navigate to the corresponding subfolder and check out the individual Readme.**
 
 ## Features
 
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
+C# samples showing use of nuget packages for the [HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/).
+Idea behind these samples is to showcase 1) how to utilize nuget packages and 2) best practices while handling data for/from these APIs.
 
 ## Getting Started
 
+Get more information on HDInsight offerings from [here](https://azure.microsoft.com/en-us/services/hdinsight/).
+This should provide you information on various APIs along with their demos and documentation.
+
 ### Prerequisites
 
-(ideally very short, if any)
+All samples in this folder require:
 
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+- Visual Studio 2017, whose free community version can be downloaded from here: https://www.visualstudio.com/vs/community/.
+- .NET core SDK (ability to run .netcore 2.1 apps). You can get CORE, Framework, and Runtime from here: https://www.microsoft.com/net/download/.
 
 ## Resources
 
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- Project page for HDInsight offerings and demos: <https://azure.microsoft.com/en-us/services/hdinsight>
+- Azure HDInsight management SDK documentation: <https://azure.microsoft.com/en-us/blog/new-azure-hdinsight-management-sdk-now-in-public-preview/>
