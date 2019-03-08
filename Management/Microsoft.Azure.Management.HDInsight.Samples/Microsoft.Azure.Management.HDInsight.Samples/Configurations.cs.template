@@ -1,0 +1,87 @@
+﻿using System;
+
+namespace Microsoft.Azure.Management.HDInsight.Samples
+{
+    internal class Configurations
+    {
+        #region Authentication
+
+        // Tenant ID for your Azure Subscription
+        internal const string TenantId = "00000000-0000-0000-0000-000000000000";
+
+        // Your Service Principal App Client ID
+        internal static readonly string ClientId = "00000000-0000-0000-0000-000000000000";
+
+        // Your Service Principal Client Secret
+        internal static readonly string ClientSecret = "";
+
+        // Azure Subscription ID
+        internal static readonly string SubscriptionId = "00000000-0000-0000-0000-000000000000";
+
+        #endregion
+
+        #region Cluster Management
+
+        // The name for the cluster you are creating
+        internal static readonly string ClusterName = "hdisample" + new Random().Next(1000, 10000);
+
+        // Choose a region
+        internal static readonly string Location = "East US 2";
+
+        // The name of your existing Resource Group
+        internal static readonly string ResourceGroupName = "";
+
+        // Choose a cluster login username
+        internal static readonly string ClusterLoginUserName = "admin";
+
+        // Choose a Secure Sehll (SSH) user username
+        internal static readonly string SshUserName = "sshuser";
+
+        // Choose a cluster admin password
+        internal static readonly string Password = "";
+
+        // The name of your storage account
+        internal static readonly string StorageAccountName = "";
+
+        // Blob Storage endpoint suffix.
+        internal static readonly string BlobEndpointSuffix = ".blob.core.windows.net";
+
+        // Dfs Storage endpoint suffix.
+        internal static readonly string DfsEndpointSuffix = ".dfs.core.windows.net";
+
+        // Storage account key you obtained above
+        internal static readonly string StorageAccountKey = "";
+
+        // WASB storage account container name
+        internal static readonly string ContainerName = string.Format("{0}-{1:yyyy-MM-dd-HH-mm-dd-fff}", ClusterName, DateTime.UtcNow);
+
+        // ADLS Gen2 storage account filesystem name
+        internal static readonly string AdlsGen2FileSystemName = ContainerName;
+
+        // ADLS Gen2 storage account recource id
+        internal static readonly string AdlsGen2ResourceId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/samplerg/providers/Microsoft.Storage/storageAccounts/sampleadlsgen2";
+
+        // User-assigned managed identity resource id
+        internal static readonly string ManagedIdentityResourceId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/samplerg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/samplemsi";
+
+        // Azure AD Domain Service resource id
+        internal static readonly string AaddsResourceId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/samplerg/providers/Microsoft.AAD/domainServices/sampledomain.onmicrosoft.com";
+
+        // Virtual network resource id
+        internal static readonly string VirtualNetworkResourceId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/samplerg/providers/Microsoft.Network/virtualNetworks/samplevnet";
+
+        // Subnet name
+        internal static readonly string SubnetName = "samplesubnet";
+
+        // Secure LDAP protocol URL to communicate with the Active Directory
+        internal static readonly string LdapsUrl = "ldaps://sampledomain.onmicrosoft.com:636";
+
+        // Cluster admin user name
+        internal static readonly string DomainUserName = "sample.user@sampledomain.onmicrosoft.com";
+
+        // Cluster access group
+        internal static readonly string ClusterAccessGroup = "Sample Group";
+
+        #endregion
+    }
+}
