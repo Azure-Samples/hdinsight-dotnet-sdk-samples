@@ -19,6 +19,7 @@ All samples in this folder require:
 
 - Visual Studio 2017, whose free community version can be downloaded from here: https://www.visualstudio.com/vs/community/.
 - .NET core SDK (ability to run .netcore 2.1 apps). You can get CORE, Framework, and Runtime from here: https://www.microsoft.com/net/download/.
+- HDInsight .NET SDK. You can get the NuGet Package from here: <https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight/>
 
 ## Resources
 

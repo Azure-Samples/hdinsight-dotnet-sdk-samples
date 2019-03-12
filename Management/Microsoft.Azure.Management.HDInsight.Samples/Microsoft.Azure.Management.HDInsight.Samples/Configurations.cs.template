@@ -6,80 +6,160 @@ namespace Microsoft.Azure.Management.HDInsight.Samples
     {
         #region Authentication
 
-        // Tenant ID for your Azure Subscription
-        internal const string TenantId = "00000000-0000-0000-0000-000000000000";
+        /// <summary>
+        /// Tenant ID for your Azure Subscription
+        /// Required by all the samples.
+        /// </summary>
+        internal static readonly string TenantId = Guid.Empty.ToString();
 
-        // Your Service Principal App Client ID
-        internal static readonly string ClientId = "00000000-0000-0000-0000-000000000000";
+        /// <summary>
+        /// Your Service Principal App Client ID
+        /// Required by all the samples.
+        /// </summary>
+        internal static readonly string ClientId = Guid.Empty.ToString();
 
-        // Your Service Principal Client Secret
+        /// <summary>
+        /// Your Service Principal Client Secret
+        /// Required by all the samples.
+        /// </summary>
         internal static readonly string ClientSecret = "";
 
-        // Azure Subscription ID
-        internal static readonly string SubscriptionId = "00000000-0000-0000-0000-000000000000";
+        /// <summary>
+        /// Azure Subscription ID
+        /// Required by all the samples.
+        /// </summary>
+        internal static readonly string SubscriptionId = Guid.Empty.ToString();
 
         #endregion
 
         #region Cluster Management
 
-        // The name for the cluster you are creating
+        /// <summary>
+        /// The name for the cluster you are creating. The name must be unique, 59 characters or less,
+        /// and can contain letters, numbers, and hyphens (but the first and last character must be a letter or number).
+        /// Required by all the samples.
+        /// </summary>
         internal static readonly string ClusterName = "hdisample" + new Random().Next(1000, 10000);
 
-        // Choose a region
-        internal static readonly string Location = "East US 2";
+        /// <summary>
+        /// Choose a region. i.e. "East US 2".
+        /// Required by all the samples.
+        /// </summary>
+        internal static readonly string Location = "";
 
-        // The name of your existing Resource Group
+        /// <summary>
+        /// The name of your existing Resource Group
+        /// Required by all the samples.
+        /// </summary>
         internal static readonly string ResourceGroupName = "";
 
-        // Choose a cluster login username
+        /// <summary>
+        /// Choose a cluster login username. The username must be at least two characters
+        /// in length and can only consist of digits, upper or lowercase letters,
+        /// and/or the following special characters: ! # $ % & ' ( ) - ^ _ ` { } ~
+        /// Required by all the samples.
+        /// </summary>
         internal static readonly string ClusterLoginUserName = "admin";
 
-        // Choose a Secure Sehll (SSH) user username
+        /// <summary>
+        /// Choose a Secure Shell (SSH) user username. The SSH username must be at least two characters
+        /// in length and can only consist of digits, upper or lowercase letters,
+        /// and/or the following special characters: % & ' - ^ _ ` {} ~
+        /// Required by all the samples.
+        /// </summary>
         internal static readonly string SshUserName = "sshuser";
 
-        // Choose a cluster admin password
+        /// <summary>
+        /// Choose a cluster admin password. The password must be at least 10 characters in length
+        /// and must contain at least one digit, one uppercase and one lower case letter,
+        /// one non-alphanumeric character (except characters ' " ` \).
+        /// Required by all the samples.
+        /// </summary>
         internal static readonly string Password = "";
 
-        // The name of your storage account
+        /// <summary>
+        /// The name of blob storage account
+        /// Required by all the samples except <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
+        /// </summary>
         internal static readonly string StorageAccountName = "";
 
-        // Blob Storage endpoint suffix.
-        internal static readonly string BlobEndpointSuffix = ".blob.core.windows.net";
-
-        // Dfs Storage endpoint suffix.
-        internal static readonly string DfsEndpointSuffix = ".dfs.core.windows.net";
-
-        // Storage account key you obtained above
+        /// <summary>
+        /// Blob storage account key
+        /// Required by all the samples except <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
+        /// </summary>
         internal static readonly string StorageAccountKey = "";
 
-        // WASB storage account container name
+        /// <summary>
+        /// Blob Storage endpoint suffix.
+        /// Required by all the samples except <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
+        /// <summary>
+        internal static readonly string BlobEndpointSuffix = ".blob.core.windows.net";
+
+        /// <summary>
+        /// Dfs Storage endpoint suffix.
+        /// Required by <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
+        /// </summary>
+        internal static readonly string DfsEndpointSuffix = ".dfs.core.windows.net";
+
+        /// <summary>
+        /// Blob storage account container name
+        /// Required by all the samples except <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
+        /// </summary>
         internal static readonly string ContainerName = string.Format("{0}-{1:yyyy-MM-dd-HH-mm-dd-fff}", ClusterName, DateTime.UtcNow);
 
-        // ADLS Gen2 storage account filesystem name
+        /// <summary>
+        /// ADLS Gen2 storage account filesystem name
+        /// Required by <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
+        /// </summary>
         internal static readonly string AdlsGen2FileSystemName = ContainerName;
 
-        // ADLS Gen2 storage account recource id
+        /// <summary>
+        /// ADLS Gen2 storage account recource id
+        /// Required by <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
+        /// </summary>
         internal static readonly string AdlsGen2ResourceId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/samplerg/providers/Microsoft.Storage/storageAccounts/sampleadlsgen2";
 
-        // User-assigned managed identity resource id
+        /// <summary>
+        /// User-assigned managed identity resource id
+        /// Required by <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>
+        /// and <see cref="CreateEspClusterSample"/>.
+        /// </summary>
         internal static readonly string ManagedIdentityResourceId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/samplerg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/samplemsi";
 
-        // Azure AD Domain Service resource id
+        /// <summary>
+        /// Azure AD Domain Service resource id
+        /// Required by <see cref="CreateEspClusterSample"/>.
+        /// </summary>
         internal static readonly string AaddsResourceId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/samplerg/providers/Microsoft.AAD/domainServices/sampledomain.onmicrosoft.com";
 
-        // Virtual network resource id
+        /// <summary>
+        /// Virtual network resource id
+        /// Required by <see cref="CreateEspClusterSample"/>.
+        /// </summary>
         internal static readonly string VirtualNetworkResourceId = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/samplerg/providers/Microsoft.Network/virtualNetworks/samplevnet";
 
-        // Subnet name
-        internal static readonly string SubnetName = "samplesubnet";
+        /// <summary>
+        /// Subnet name
+        /// Required by <see cref="CreateEspClusterSample"/>.
+        /// </summary>
+        internal static readonly string SubnetName = "";
 
-        // Secure LDAP protocol URL to communicate with the Active Directory
+        /// <summary>
+        /// Secure LDAP protocol URL to communicate with the Active Directory
+        /// Required by <see cref="CreateEspClusterSample"/>.
+        /// </summary>
         internal static readonly string LdapsUrl = "ldaps://sampledomain.onmicrosoft.com:636";
 
-        // Cluster admin user name
+        /// <summary>
+        /// Cluster Admin AD Account Username
+        /// Required by <see cref="CreateEspClusterSample"/>.
+        /// </summary>
         internal static readonly string DomainUserName = "sample.user@sampledomain.onmicrosoft.com";
 
-        // Cluster access group
+        /// <summary>
+        /// Cluster access group
+        /// Required by <see cref="CreateEspClusterSample"/>.
+        /// </summary>
         internal static readonly string ClusterAccessGroup = "Sample Group";
 
         #endregion
