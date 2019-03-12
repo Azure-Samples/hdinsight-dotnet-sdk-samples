@@ -94,18 +94,18 @@ namespace Microsoft.Azure.Management.HDInsight.Samples
         /// Required by all the samples except <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
         /// <summary>
         internal static readonly string BlobEndpointSuffix = ".blob.core.windows.net";
+        
+        /// <summary>
+        /// Blob storage account container name
+        /// Required by all the samples except <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
+        /// </summary>
+        internal static readonly string ContainerName = string.Format("{0}-{1:yyyy-MM-dd-HH-mm-dd-fff}", ClusterName, DateTime.UtcNow);
 
         /// <summary>
         /// Dfs Storage endpoint suffix.
         /// Required by <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
         /// </summary>
         internal static readonly string DfsEndpointSuffix = ".dfs.core.windows.net";
-
-        /// <summary>
-        /// Blob storage account container name
-        /// Required by all the samples except <see cref="CreateHadoopClusterWithAdlsGen2Sample"/>.
-        /// </summary>
-        internal static readonly string ContainerName = string.Format("{0}-{1:yyyy-MM-dd-HH-mm-dd-fff}", ClusterName, DateTime.UtcNow);
 
         /// <summary>
         /// ADLS Gen2 storage account filesystem name
