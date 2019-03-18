@@ -116,9 +116,9 @@ namespace Microsoft.Azure.Management.HDInsight.Samples
                 }
             };
 
-            Console.WriteLine($"Start to create HDInsight Hadoop cluster {clusterName} with Azure Data Lake Storage Gen2");
+            Console.WriteLine($"Starting to create HDInsight Hadoop cluster {clusterName} with Azure Data Lake Storage Gen2");
             client.Clusters.Create(Configurations.ResourceGroupName, clusterName, createParamsForADLSv2);
-            Console.WriteLine($"Finish creating HDInsight Hadoop cluster {clusterName} with Azure Data Lake Storage Gen2");
+            Console.WriteLine($"Finished creating HDInsight Hadoop cluster {clusterName} with Azure Data Lake Storage Gen2");
         }
     }
 }

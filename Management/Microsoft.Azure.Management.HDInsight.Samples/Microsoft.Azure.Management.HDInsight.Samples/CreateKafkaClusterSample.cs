@@ -127,9 +127,9 @@ namespace Microsoft.Azure.Management.HDInsight.Samples
                 }
             };
 
-            Console.WriteLine($"Start to create HDInsight Kafka cluster {clusterName}");
+            Console.WriteLine($"Starting to create HDInsight Kafka cluster {clusterName}");
             var cluster = client.Clusters.Create(Configurations.ResourceGroupName, clusterName, createParams);
-            Console.WriteLine($"Finish creating HDInsight Kafka cluster {clusterName}");
+            Console.WriteLine($"Finished creating HDInsight Kafka cluster {clusterName}");
         }
     }
 }
