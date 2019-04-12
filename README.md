@@ -19,7 +19,7 @@ If you are getting started with the HDInsight SDK for .NET for the first time, s
 
 ## Resources
 
-- [Azure HDInsight .NET SDK documentation](https://docs.microsoft.com/dotnet/api/overview/azure/hdinsight?view=azure-dotnet)
-- [HDInsight Python SDK samples](https://github.com/Azure-Samples/hdinsight-python-sdk-samples)
-- [HDInsight Java SDK samples](https://github.com/Azure-Samples/hdinsight-java-sdk-samples)
+- [Azure HDInsight SDK for .NET documentation](https://docs.microsoft.com/dotnet/api/overview/azure/hdinsight?view=azure-dotnet)
+- [HDInsight Python samples](https://github.com/Azure-Samples/hdinsight-python-sdk-samples)
+- [HDInsight Java samples](https://github.com/Azure-Samples/hdinsight-java-sdk-samples)
 - [HDInsight Documentation](https://docs.microsoft.com/azure/hdinsight/)
