@@ -135,9 +135,9 @@ namespace Microsoft.Azure.Management.HDInsight.Samples
                 }
             };
 
-            Console.WriteLine($"Start to create HDInsight Spark cluster {clusterName} with Enterprise Security Package");
+            Console.WriteLine($"Starting to create HDInsight Spark cluster {clusterName} with Enterprise Security Package");
             client.Clusters.Create(Configurations.ResourceGroupName, clusterName, createParams);
-            Console.WriteLine($"Finish creating HDInsight Spark cluster {clusterName} with Enterprise Security Package");
+            Console.WriteLine($"Finished creating HDInsight Spark cluster {clusterName} with Enterprise Security Package");
         }
     }
 }
