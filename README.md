@@ -11,7 +11,7 @@ This repo provides C# samples for the [HDInsight](https://azure.microsoft.com/se
 
 ## Features
 
-C# samples showing the use of the HDInsight SDK for .NET nuget packages.  The idea behind these samples is to showcase 1) how to utilize the HDInsight SDK for .NETand 2) best practices for handling data associated with these APIs.
+C# samples showing the use of the HDInsight SDK for .NET nuget packages. The idea behind these samples is to showcase 1) how to utilize the HDInsight SDK for .NET and 2) best practices for handling data associated with these APIs.
 
 ## Getting Started
 
