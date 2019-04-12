@@ -15,7 +15,7 @@ C# samples showing the use of the HDInsight SDK for .NET nuget packages. The ide
 
 ## Getting Started
 
-If you are getting started with the HDInsight SDK for .NET for the first time, start with [this documentation](https://docs.microsoft.com/dotnet/api/overview/azure/hdinsight?view=azure-dotnet) for install and set up instructions.
+If you are getting started with the HDInsight SDK for .NET for the first time, start with [this documentation](https://docs.microsoft.com/dotnet/api/overview/azure/hdinsight?view=azure-dotnet) for install and setup instructions.
 
 ## Resources
 
