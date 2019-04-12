@@ -1,3 +1,10 @@
+---
+services: hdinsight
+platforms: dotnet
+author: tylerfox
+ms.author: tyfox
+---
+
 # Sample for [HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/) Nuget Packages
 
 This repo provides C# samples for the [HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/) Nuget Packages.
