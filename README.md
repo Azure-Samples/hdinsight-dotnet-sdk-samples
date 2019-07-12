@@ -3,6 +3,13 @@ services: hdinsight
 platforms: dotnet
 author: tylerfox
 ms.author: tyfox
+topic: sample
+languages:
+  - csharp
+products:
+  - azure-hdinsight
+name: Azure HDInsight SDK for .NET Samples
+urlFragment: azure-hdinsight-sdk-for-dotnet-samples
 ---
 
 # Azure [HDInsight](https://azure.microsoft.com/services/hdinsight/) SDK for .NET Samples
