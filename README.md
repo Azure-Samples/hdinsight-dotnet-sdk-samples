@@ -14,11 +14,11 @@ urlFragment: azure-hdinsight-sdk-for-dotnet-samples
 
 # Azure [HDInsight](https://azure.microsoft.com/services/hdinsight/) SDK for .NET Samples
 
-This repo provides C# samples for the Azure [HDInsight](https://azure.microsoft.com/services/hdinsight/) Nuget Packages.
+This repo provides samples for the Azure [HDInsight](https://azure.microsoft.com/services/hdinsight/) SDK for .NET NuGet Packages.
 
 ## Features
 
-C# samples showing the use of the Azure HDInsight SDK for .NET nuget packages. The idea behind these samples is to showcase 1) how to utilize the Azure HDInsight SDK for .NET and 2) best practices for handling data associated with these APIs.
+C# samples showing the use of the Azure HDInsight SDK for .NET NuGet packages. The idea behind these samples is to showcase 1) how to utilize the Azure HDInsight SDK for .NET and 2) best practices for handling data associated with these APIs.
 
 ## Getting Started
 
