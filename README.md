@@ -3,6 +3,7 @@ services: hdinsight
 platforms: dotnet
 author: tylerfox
 ms.author: tyfox
+page_type: sample
 topic: sample
 languages:
   - csharp
