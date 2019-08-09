@@ -10,7 +10,7 @@ urlFragment: azure-hdinsight-sdk-for-dotnet-samples
 description: "This repo provides samples for the Azure HDInsight SDK for .NET."
 ---
 
-# Azure [HDInsight](https://azure.microsoft.com/services/hdinsight/) SDK for .NET Samples
+# Azure HDInsight SDK for .NET Samples
 
 This repo provides samples for the Azure [HDInsight](https://azure.microsoft.com/services/hdinsight/) SDK for .NET NuGet Packages.
 
